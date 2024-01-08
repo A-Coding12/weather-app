@@ -16,4 +16,4 @@ COPY . /app
 RUN python manage.py makemigrations
 RUN python manage.py migrate
 
-ENTRYPOINT [ "gunicorn", "Weatherapp.wsgi"]
+ENTRYPOINT [ "gunicorn", "weatherapp.wsgi"]
